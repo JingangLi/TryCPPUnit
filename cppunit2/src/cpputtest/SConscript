@@ -1,0 +1,27 @@
+Import( 'env_testing buildLibraryUnitTest' )
+
+buildLibraryUnitTest( env_testing, Split( """
+    main.cpp
+    assertenumtest.cpp 
+    assertstringtest.cpp 
+    enumeratortest.cpp 
+    reflectiontest.cpp
+    registrytest.cpp
+    testbasicassertion.cpp
+    testexceptionguard.cpp
+    testfixturetest.cpp 
+    testfunctor.cpp 
+    testinfotest.cpp
+    testtestcase.cpp 
+    valuetest.cpp
+     """ ),
+    'cpputtest',
+    'check_cpput' )
+
+# Removed until comparison assertion support opertor << to provide message
+# smallmaptest.cpp
+
+
+# temporarily removed while implemented test case factory. Abstract Test Fixture will
+# be complex to support.
+#    testtestsuite.cpp

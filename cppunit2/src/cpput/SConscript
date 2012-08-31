@@ -1,0 +1,15 @@
+Import( 'env buildLibary' )
+
+buildLibary( env, Split( """
+    assert.cpp 
+    assertstring.cpp 
+    exceptionguard.cpp
+    extendeddata.cpp
+    lighttestrunner.cpp
+	message.cpp
+    registry.cpp 
+    testcase.cpp 
+    testinfo.cpp 
+    testing.cpp 
+     """ ),
+    'cpput' )

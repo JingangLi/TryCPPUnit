@@ -1,0 +1,9 @@
+Import( 'env buildLibary' )
+
+buildLibary( env, Split( """
+    json_reader.cpp
+    json_value.cpp
+    json_writer.cpp
+    thread.cpp
+     """ ),
+    'cpptl' )
